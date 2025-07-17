@@ -100,7 +100,7 @@ header h1 {
   font-size: 1.8rem;
   font-weight: 600;
   margin: 0;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   animation: fadeIn 1s ease-in-out;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.7);
@@ -124,7 +124,7 @@ header img {
   width: 2.5rem;
   cursor: pointer;
   z-index: 1000;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.6);
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -730,6 +730,12 @@ section strong {
 }
 
 @media (max-width: 768px) {
+  .nav-toggle-label {
+    top: 1.5rem;
+    right: 1rem;
+    left: auto;
+  }
+
   .container {
     margin-top: 0; /* Resetear margen en mobile */
   }
@@ -753,6 +759,7 @@ section strong {
 
   header h1 {
     font-size: 1.5rem;
+    padding: 0.3rem 1rem;
   }
 }
 
