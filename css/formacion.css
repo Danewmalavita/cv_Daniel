@@ -1,0 +1,203 @@
+/* ===============================
+   ESTILOS DE FORMACIÓN
+================================= */
+
+/* Timeline de formación académica */
+.timeline {
+  position: relative;
+  margin: 2rem 0;
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.timeline-item:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 3px;
+  background: var(--color-border);
+}
+
+.timeline-item:after {
+  content: '';
+  position: absolute;
+  left: -8px;
+  top: 0;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: var(--btn-primary-bg);
+  box-shadow: 0 0 10px rgba(0, 151, 194, 0.7);
+}
+
+.timeline-item .fecha {
+  position: absolute;
+  left: -65px;
+  top: 0;
+  font-weight: bold;
+  color: var(--color-text);
+}
+
+.contenido-item h3 {
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+.contenido-item .institucion {
+  font-style: italic;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.8rem;
+}
+
+.contenido-item ul {
+  padding-left: 1.5rem;
+}
+
+/* Certificaciones */
+.certificados-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.certificado {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  position: relative;
+  border: 1px solid var(--card-border);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: var(--card-shadow);
+}
+
+.certificado:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px var(--color-shadow);
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+  margin: 0 auto 1rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.logo.microsoft {
+  background-image: url('../img/microsoft-logo.png');
+  /* Si no existe la imagen, usa un color de fondo */
+  background-color: #00a4ef;
+  border-radius: 50%;
+}
+
+.logo.cisco {
+  background-image: url('../img/cisco-logo.png');
+  /* Si no existe la imagen, usa un color de fondo */
+  background-color: #1ba0d7;
+  border-radius: 50%;
+}
+
+.logo.comptia {
+  background-image: url('../img/comptia-logo.png');
+  /* Si no existe la imagen, usa un color de fondo */
+  background-color: #f26c21;
+  border-radius: 50%;
+}
+
+.certificado h3 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.certificado p {
+  text-align: center;
+  color: var(--color-text-secondary);
+  font-size: 0.9rem;
+}
+
+.certificado .fecha-cert {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--color-glass);
+  padding: 0.2rem 0.6rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+/* Cursos */
+.cursos-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.curso {
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 1.2rem;
+  border-left: 4px solid var(--btn-primary-bg);
+  box-shadow: var(--card-shadow);
+}
+
+.curso h3 {
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+.curso p {
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 0.3rem;
+}
+
+.progress-bar {
+  height: 8px;
+  background: rgba(128, 128, 128, 0.2);
+  border-radius: 4px;
+  margin-top: 0.8rem;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: var(--btn-primary-bg);
+  animation: growBar 1.5s ease-out forwards;
+}
+
+@keyframes growBar {
+  from {
+    width: 0;
+  }
+  to {
+    width: inherit;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .timeline-item {
+    padding-left: 1.5rem;
+  }
+  
+  .timeline-item .fecha {
+    position: relative;
+    left: 0;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+  }
+  
+  .certificados-grid {
+    grid-template-columns: 1fr;
+  }
+}

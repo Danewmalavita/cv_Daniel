@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel Garrote Esteban - Formación</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/formacion.css" />
+  <script src="js/theme.js" defer></script>
+</head>
+<body>
+  <!-- ENCABEZADO CON MENÚ HAMBURGUESA -->
+  <header>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="experiencia.html">Experiencia</a></li>
+        <li><a href="formacion.html">Formación</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <h1>Daniel Garrote Esteban</h1>
+  </header>
+
+  <!-- CONTENIDO GENERAL -->
+  <div class="container">
+    <!-- SIDEBAR IZQUIERDO -->
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="img/perfil.png" alt="Foto de perfil" class="foto-perfil" />
+        <h1>Daniel Garrote Esteban</h1>
+        <p class="titulo">Técnico de Soporte | M365 & Redes</p>
+        <div class="contacto">
+          <span>📍 Madrid</span>
+          <span><a href="mailto:danielgarroteesteban@gmail.com">danielgarroteesteban@gmail.com</a></span>
+          <span><a href="tel:+34 699 14 30 78">+34 699 14 30 78</a></span>
+        </div>
+        <a class="boton-cv" href="docs/DanielGarroteCV.pdf" download>📄 Descargar CV</a>
+      </div>
+
+      <div class="bloque">
+        <h2>Habilidades</h2>
+        <div class="skill" data-percentage="90%">Microsoft 365<div class="bar bar1"></div></div>
+        <div class="skill" data-percentage="80%">Windows Server<div class="bar bar2"></div></div>
+        <div class="skill" data-percentage="65%">Linux Server<div class="bar bar3"></div></div>
+        <div class="skill" data-percentage="70%">PowerShell<div class="bar bar4"></div></div>
+      </div>
+
+      <div class="bloque">
+        <h2>Idiomas</h2>
+        <ul>
+          <li>Español: Nativo</li>
+          <li>Inglés: C1</li>
+          <li>Portugués: B1</li>
+        </ul>
+      </div>
+
+      <div class="bloque">
+        <h2>Intereses</h2>
+        <ul>
+          <li>Redes</li>
+          <li>Automatización</li>
+          <li>Ciberseguridad</li>
+          <li>UI Design</li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- ÁREA PRINCIPAL -->
+    <main class="contenido">
+      <section class="formacion-principal">
+        <h2>Formación Académica</h2>
+        
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="fecha">2011</div>
+            <div class="contenido-item">
+              <h3>Técnico en Sistemas Microinformáticos y Redes</h3>
+              <p class="institucion">IES Venancio Blanco, Salamanca</p>
+              <ul>
+                <li>Instalación y mantenimiento de equipos y redes</li>
+                <li>Sistemas operativos Windows y Linux</li>
+                <li>Seguridad informática</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="certificaciones">
+        <h2>Certificaciones</h2>
+        
+        <div class="certificados-grid">
+          <div class="certificado">
+            <div class="logo microsoft"></div>
+            <h3>Microsoft 365 Certified: Administrator Associate</h3>
+            <p>Microsoft</p>
+            <span class="fecha-cert">2023</span>
+          </div>
+          
+          <div class="certificado">
+            <div class="logo cisco"></div>
+            <h3>CCNA: Cisco Certified Network Associate</h3>
+            <p>Cisco</p>
+            <span class="fecha-cert">2022</span>
+          </div>
+          
+          <div class="certificado">
+            <div class="logo comptia"></div>
+            <h3>CompTIA Security+</h3>
+            <p>CompTIA</p>
+            <span class="fecha-cert">2021</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="cursos">
+        <h2>Cursos y Formación Complementaria</h2>
+        
+        <div class="cursos-lista">
+          <div class="curso">
+            <h3>Automatización de Infraestructura con PowerShell</h3>
+            <p>Plataforma: Udemy</p>
+            <p>Duración: 30 horas</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 100%"></div>
+            </div>
+          </div>
+          
+          <div class="curso">
+            <h3>Implementación de Soluciones Cloud en Azure</h3>
+            <p>Plataforma: Microsoft Learn</p>
+            <p>Duración: 40 horas</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 100%"></div>
+            </div>
+          </div>
+          
+          <div class="curso">
+            <h3>Administración Avanzada de Linux</h3>
+            <p>Plataforma: Coursera</p>
+            <p>Duración: 25 horas</p>
+            <div class="progress-bar">
+              <div class="progress" style="width: 90%"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel Garrote Esteban - Contacto</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contacto.css" />
+  <script src="js/theme.js" defer></script>
+</head>
+<body>
+  <!-- ENCABEZADO CON MENÚ HAMBURGUESA -->
+  <header>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="experiencia.html">Experiencia</a></li>
+        <li><a href="formacion.html">Formación</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <h1>Daniel Garrote Esteban</h1>
+  </header>
+
+  <!-- CONTENIDO GENERAL -->
+  <div class="container">
+    <!-- SIDEBAR IZQUIERDO -->
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="img/perfil.png" alt="Foto de perfil" class="foto-perfil" />
+        <h1>Daniel Garrote Esteban</h1>
+        <p class="titulo">Técnico de Soporte | M365 & Redes</p>
+        <div class="contacto">
+          <span>📍 Madrid</span>
+          <span><a href="mailto:danielgarroteesteban@gmail.com">danielgarroteesteban@gmail.com</a></span>
+          <span><a href="tel:+34 699 14 30 78">+34 699 14 30 78</a></span>
+        </div>
+        <a class="boton-cv" href="docs/DanielGarroteCV.pdf" download>📄 Descargar CV</a>
+      </div>
+
+      <div class="bloque">
+        <h2>Habilidades</h2>
+        <div class="skill" data-percentage="90%">Microsoft 365<div class="bar bar1"></div></div>
+        <div class="skill" data-percentage="80%">Windows Server<div class="bar bar2"></div></div>
+        <div class="skill" data-percentage="65%">Linux Server<div class="bar bar3"></div></div>
+        <div class="skill" data-percentage="70%">PowerShell<div class="bar bar4"></div></div>
+      </div>
+
+      <div class="bloque">
+        <h2>Idiomas</h2>
+        <ul>
+          <li>Español: Nativo</li>
+          <li>Inglés: C1</li>
+          <li>Portugués: B1</li>
+        </ul>
+      </div>
+
+      <div class="bloque">
+        <h2>Intereses</h2>
+        <ul>
+          <li>Redes</li>
+          <li>Automatización</li>
+          <li>Ciberseguridad</li>
+          <li>UI Design</li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- ÁREA PRINCIPAL -->
+    <main class="contenido">
+      <section class="contacto-section">
+        <h2>Ponte en contacto</h2>
+        <p class="intro-contacto">Rellena el formulario a continuación para ponerte en contacto conmigo. Responderé lo antes posible.</p>
+
+        <div class="contacto-container">
+          <div class="contacto-info">
+            <div class="info-item">
+              <div class="icon-container email-icon">
+                <span>✉️</span>
+              </div>
+              <div class="info-content">
+                <h3>Email</h3>
+                <p><a href="mailto:danielgarroteesteban@gmail.com">danielgarroteesteban@gmail.com</a></p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="icon-container phone-icon">
+                <span>📞</span>
+              </div>
+              <div class="info-content">
+                <h3>Teléfono</h3>
+                <p><a href="tel:+34 699 14 30 78">+34 699 14 30 78</a></p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="icon-container location-icon">
+                <span>📍</span>
+              </div>
+              <div class="info-content">
+                <h3>Ubicación</h3>
+                <p>Madrid, España</p>
+              </div>
+            </div>
+            
+            <div class="social-links">
+              <h3>Redes Sociales</h3>
+              <div class="social-icons">
+                <a href="https://linkedin.com/in/daniel-garrote-esteban-645b24b2" target="_blank" class="social-icon linkedin">LinkedIn</a>
+                <a href="https://github.com/Danewmalavita" target="_blank" class="social-icon github">GitHub</a>
+                <a href="https://x.com/Danew_mv_dev" target="_blank" class="social-icon twitter">Twitter</a>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+            </div>
+
+            <div class="form-group">
+              <label for="asunto">Asunto</label>
+              <input type="text" id="asunto" name="asunto" placeholder="Asunto de tu mensaje">
+            </div>
+
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+            </div>
+
+            <div class="form-group">
+              <button type="submit" class="submit-btn">Enviar Mensaje</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

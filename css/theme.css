@@ -1,0 +1,81 @@
+/* ===============================
+   THEME VARIABLES
+================================= */
+
+/* Light Theme (Default) */
+.light-theme, body {
+  /* Colors */
+  --color-background: #f5f8fa;
+  --color-glass: rgba(255, 255, 255, 0.9);
+  --color-shadow: rgba(0, 0, 0, 0.15); /* Increased shadow opacity */
+  --color-border: rgba(200, 200, 200, 0.5); /* Increased border opacity */
+  --color-text: #222; /* Darker text for better contrast */
+  --color-text-secondary: #444; /* Darker secondary text */
+  
+  /* Components */
+  --card-bg: rgba(255, 255, 255, 0.95); /* Increased opacity */
+  --card-border: rgba(200, 200, 200, 0.6); /* Increased border opacity */
+  --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  --input-bg: rgba(240, 240, 240, 0.8);
+  
+  /* Buttons */
+  --btn-primary-bg: #0097c2; /* Darker blue for better contrast */
+  --btn-primary-text: #fff;
+  --btn-hover-bg: #007da3;
+}
+
+/* Dark Theme */
+.dark-theme {
+  /* Colors */
+  --color-background: #121212;
+  --color-glass: rgba(30, 30, 30, 0.9);
+  --color-shadow: rgba(0, 0, 0, 0.35); /* Increased shadow opacity */
+  --color-border: rgba(100, 100, 100, 0.3); /* Increased border opacity */
+  --color-text: #e0e0e0;
+  --color-text-secondary: #b0b0b0;
+  
+  /* Components */
+  --card-bg: rgba(40, 40, 40, 0.95); /* Increased opacity */
+  --card-border: rgba(70, 70, 70, 0.6); /* Increased border opacity */
+  --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  --input-bg: rgba(60, 60, 60, 0.8);
+  
+  /* Buttons */
+  --btn-primary-bg: #595c5d;
+  --btn-primary-text: #111;
+  --btn-hover-bg: #37c0e5;
+}
+
+/* Theme Transition */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light/Dark Specific Styles */
+.light-theme .profile img.foto-perfil {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Increased shadow */
+}
+
+.dark-theme .profile img.foto-perfil {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* Increased shadow */
+  border-color: rgba(80, 80, 80, 0.6); /* Increased border opacity */
+}
+
+.dark-theme .proyecto img {
+  filter: brightness(0.9);
+}
+
+/* Technology-themed elements */
+.light-theme .bar {
+  box-shadow: 0 0 8px rgba(0, 151, 194, 0.3); /* Subtle glow effect for skill bars */
+}
+
+.dark-theme .bar {
+  box-shadow: 0 0 8px rgba(93, 220, 255, 0.3); /* Subtle glow effect for skill bars */
+}
+
+/* Mejor visualización */
+.light-theme header h1,
+.dark-theme header h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}

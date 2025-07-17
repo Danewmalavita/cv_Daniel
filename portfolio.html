@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel Garrote Esteban - Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/portfolio.css" />
+  <script src="js/theme.js" defer></script>
+</head>
+<body>
+  <header>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="experiencia.html">Experiencia</a></li>
+        <li><a href="formacion.html">Formación</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <h1>Daniel Garrote Esteban</h1>
+  </header>
+
+  <main class="contenido">
+    <section class="portfolio">
+      <h2>Galería de Proyectos</h2>
+      <div class="galeria">
+        <article class="proyecto">
+          <img src="img/pytris.png" alt="Pytris Game" />
+          <div class="info">
+            <h3>Pytris v2.0</h3>
+            <p>Un juego de tetris creado con la librería Pygame de python</p>
+            <a href="https://github.com/Danewmalavita/Pytris" target="_blank">Ver en GitHub</a>
+            <div class="skill">Python<div class="bar" style="width: 100%; background: #f2c94c;"></div></div>
+          </div>
+        </article>
+
+        <article class="proyecto">
+          <img src="img/zabbix-monitoring.png" alt="Zabbix Monitoring" />
+          <div class="info">
+            <h3>Monitorización con Zabbix</h3>
+            <p>Servidor Ubuntu y dashboard de alertas</p>
+            <a href="https://github.com/danielgarrote/zabbix-monitoring" target="_blank">Ver en GitHub</a>
+            <div class="skill">Zabbix<div class="bar" style="width: 70%; background: #5ddcff;"></div></div>
+            <div class="skill">Bash<div class="bar" style="width: 30%; background: #3cba92;"></div></div>
+          </div>
+        </article>
+
+        <article class="proyecto">
+          <img src="img/backup-scripts.png" alt="Backup Scripts" />
+          <div class="info">
+            <h3>Scripts de Backup</h3>
+            <p>Automatización de copias de seguridad para servidores</p>
+            <a href="https://github.com/danielgarrote/backup-scripts" target="_blank">Ver en GitHub</a>
+            <div class="skill">PowerShell<div class="bar" style="width: 80%; background: #eb5757;"></div></div>
+            <div class="skill">Batch<div class="bar" style="width: 20%; background: #f2c94c;"></div></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

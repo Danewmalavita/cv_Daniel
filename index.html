@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel Garrote Esteban - CV Tecnológico</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/theme.js" defer></script>
+</head>
+<body>
+  <!-- ENCABEZADO CON MENÚ HAMBURGUESA -->
+  <header>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="experiencia.html">Experiencia</a></li>
+        <li><a href="formacion.html">Formación</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="nav-overlay"></div>
+    <h1>Daniel Garrote Esteban</h1>
+  </header>
+
+  <!-- CONTENIDO GENERAL -->
+  <div class="container">
+    <!-- SIDEBAR IZQUIERDO -->
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="img/perfil.png" alt="Foto de perfil" class="foto-perfil" />
+        <h1>Daniel Garrote Esteban</h1>
+        <p class="titulo">Técnico de Soporte | M365 & Redes</p>
+        <div class="contacto">
+          <span>📍 Madrid</span>
+          <span><a href="mailto:danielgarroteesteban@gmail.com">danielgarroteesteban@gmail.com</a></span>
+          <span><a href="tel:+34 699 14 30 78">+34 699 14 30 78</a></span>
+        </div>
+        <a class="boton-cv" href="docs/DanielGarroteCV.pdf" download>📄 Descargar CV</a>
+      </div>
+
+      <div class="bloque">
+        <h2>Habilidades</h2>
+        <div class="skill" data-percentage="90%">Microsoft 365<div class="bar bar1"></div></div>
+        <div class="skill" data-percentage="80%">Windows Server<div class="bar bar2"></div></div>
+        <div class="skill" data-percentage="65%">Linux Server<div class="bar bar3"></div></div>
+        <div class="skill" data-percentage="70%">PowerShell<div class="bar bar4"></div></div>
+      </div>
+
+      <div class="bloque">
+        <h2>Idiomas</h2>
+        <ul>
+          <li>Español: Nativo</li>
+          <li>Inglés: C1</li>
+          <li>Portugués: B1</li>
+        </ul>
+      </div>
+
+      <div class="bloque">
+        <h2>Intereses</h2>
+        <ul>
+          <li>Redes</li>
+          <li>Automatización</li>
+          <li>Ciberseguridad</li>
+          <li>UI Design</li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- ÁREA PRINCIPAL -->
+    <main class="contenido">
+      <section class="perfil">
+        <h2>Sobre mí</h2>
+        <p>Soy técnico de soporte con experiencia administrando entornos híbridos y soluciones cloud, especializado en Microsoft 365, redes y automatización.</p>
+      </section>
+
+      <section class="experiencia">
+        <h2>Experiencia destacada</h2>
+        <p>Consulta la sección <strong>Experiencia</strong> del menú para ver los detalles completos de mi trayectoria profesional.</p>
+      </section>
+
+      <section class="formacion">
+        <h2>Formación</h2>
+        <div>
+          <strong>Técnico en Sistemas Microinformáticos y Redes</strong>
+        </div>
+        <div>IES Venancio Blanco, Salamanca – 2011</div>
+      </section>
+
+      <section class="portfolio">
+        <h2>Proyectos</h2>
+        <ul>
+          <li>🖥️ Automatización con PowerShell en AD/M365</li>
+          <li>🌐 Monitorización con Zabbix y Ubuntu</li>
+          <li>🔒 Scripts para backup y seguridad</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    // Cerrar menú al hacer clic en el overlay
+    document.querySelector('.nav-overlay').addEventListener('click', function() {
+      document.getElementById('nav-toggle').checked = false;
+    });
+  </script>
+</body>
+</html>
