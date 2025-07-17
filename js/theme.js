@@ -35,29 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
   themeToggle.title = 'Cambiar tema';
   themeToggle.setAttribute('aria-label', 'Cambiar entre modo oscuro y claro');
   
-  // Add styles to the button
-  themeToggle.style.position = 'fixed';
-  themeToggle.style.top = '15px';
-  themeToggle.style.right = '15px';
-  themeToggle.style.zIndex = '9999';
-  themeToggle.style.background = 'rgba(93, 220, 255, 0.7)';
-  themeToggle.style.border = 'none';
-  themeToggle.style.borderRadius = '50%';
-  themeToggle.style.width = '40px';
-  themeToggle.style.height = '40px';
-  themeToggle.style.cursor = 'pointer';
-  themeToggle.style.fontSize = '20px';
-  themeToggle.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
-  themeToggle.style.transition = 'all 0.3s ease';
-  
-  // Add hover effect
-  themeToggle.onmouseover = function() {
-    this.style.transform = 'scale(1.1)';
-  };
-  themeToggle.onmouseout = function() {
-    this.style.transform = 'scale(1)';
-  };
-  
   // Add click event
   themeToggle.addEventListener('click', toggleTheme);
   
