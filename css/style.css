@@ -340,136 +340,121 @@ nav ul li a:hover::after {
 .sidebar {
   width: var(--sidebar-width);
   background: var(--color-glass);
-  padding: 2.5rem;
+  padding: 1.5rem; /* Reducir padding */
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 1.2rem; /* Reducir gap entre elementos */
   position: sticky;
   top: 0;
   height: 100vh;
-  overflow-y: auto;
+  overflow-y: hidden; /* Eliminar scroll completamente */
   box-shadow: 0 0 25px var(--color-shadow);
   backdrop-filter: blur(15px);
   border-right: 1px solid var(--color-border);
   z-index: 5;
+  justify-content: space-between; /* Distribuir contenido uniformemente */
 }
 
-.sidebar::-webkit-scrollbar {
-  width: 5px;
-}
-
-.sidebar::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.sidebar::-webkit-scrollbar-thumb {
-  background-color: var(--color-hover);
-  border-radius: 20px;
-}
-
+/* Ajustar elementos del sidebar para que quepan sin scroll */
 .sidebar .bloque {
   background: var(--card-bg);
-  padding: 1.5rem;
+  padding: 1rem; /* Reducir padding */
   border-radius: var(--radius);
   box-shadow: var(--card-shadow);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex-shrink: 0; /* Evitar que se compriman demasiado */
 }
 
 .sidebar .bloque:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px var(--color-shadow);
+  transform: translateY(-2px); /* Reducir movimiento hover */
+  box-shadow: 0 6px 20px var(--color-shadow);
 }
 
 .sidebar .bloque h2 {
-  font-size: 1.3rem;
-  margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
+  font-size: 1.1rem; /* Reducir tamaño de título */
+  margin-bottom: 0.8rem;
+  padding-bottom: 0.3rem;
   border-bottom: 1px solid var(--color-border);
 }
 
 .sidebar .bloque ul li {
-  padding: 0.4rem 0;
+  padding: 0.2rem 0; /* Reducir espaciado entre items */
   display: flex;
   align-items: center;
+  font-size: 0.85rem; /* Reducir tamaño de fuente */
 }
 
-.sidebar .bloque ul li:before {
-  content: "•";
-  color: var(--color-bar-1);
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-right: 0.5em;
-}
-
+/* Ajustar perfil */
 .profile {
   text-align: center;
+  flex-shrink: 0; /* No comprimir el perfil */
 }
 
 .profile img.foto-perfil {
   border-radius: 50%;
-  width: 160px;
-  height: 160px;
+  width: 120px; /* Reducir tamaño */
+  height: 120px;
   object-fit: cover;
-  margin: 0 auto 1.5rem;
+  margin: 0 auto 1rem; /* Reducir margen */
   display: block;
-  border: 4px solid var(--color-glass);
-  box-shadow: 0 5px 15px var(--color-shadow);
+  border: 3px solid var(--color-glass); /* Reducir borde */
+  box-shadow: 0 4px 12px var(--color-shadow);
   transition: transform 0.5s ease;
 }
 
 .profile img.foto-perfil:hover {
-  transform: scale(1.05);
+  transform: scale(1.03); /* Reducir escala hover */
 }
 
 .profile h1 {
   text-align: center;
-  font-size: 1.6rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.4rem; /* Reducir tamaño */
+  margin-bottom: 0.3rem;
 }
 
 .profile .titulo {
   text-align: center;
   font-style: italic;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--color-text-muted);
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .contacto {
   text-align: center;
-  font-size: 0.95rem;
-  margin: 1rem 0;
+  font-size: 0.85rem; /* Reducir tamaño */
+  margin: 0.8rem 0;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.3rem; /* Reducir gap */
 }
 
 .contacto span {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 0.4rem;
 }
 
 .boton-cv {
   display: inline-block;
   text-align: center;
-  margin-top: 1.5rem;
-  padding: 0.8rem 1.5rem;
+  margin-top: 1rem; /* Reducir margen */
+  padding: 0.6rem 1.2rem; /* Reducir padding */
   background: var(--btn-primary-bg);
   color: var(--btn-primary-text);
   border: none;
   border-radius: var(--radius);
   font-weight: 500;
+  font-size: 0.9rem; /* Reducir tamaño de fuente */
   text-decoration: none;
   transition: all 0.3s;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
 
 .boton-cv:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 7px 15px rgba(0,0,0,0.2);
+  transform: translateY(-2px); /* Reducir movimiento */
+  box-shadow: 0 5px 12px rgba(0,0,0,0.2);
   background: var(--color-bar-1);
   color: white;
 }
