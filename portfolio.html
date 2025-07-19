@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/portfolio.css" />
   <link rel="stylesheet" href="css/slider.css" />
+  <link rel="stylesheet" href="css/skill-bars.css" />
+  <script src="js/skill-bars.js" defer></script>
   <script src="js/theme.js" defer></script>
 </head>
 <body>
@@ -27,7 +29,62 @@
     <h1>Daniel Garrote Esteban</h1>
   </header>
 
-  <main class="contenido">
+  <!-- CONTENIDO GENERAL -->
+  <div class="container">
+    <!-- SIDEBAR (MISMO QUE EN INDEX) -->
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="img/perfil.png" alt="Foto de perfil" class="foto-perfil" />
+        <h1>Daniel Garrote Esteban</h1>
+        <p class="titulo">Técnico de Soporte | M365 & Redes</p>
+        <div class="contacto">
+          <span>📍 Madrid</span>
+          <span><a href="mailto:danielgarroteesteban@gmail.com">danielgarroteesteban@gmail.com</a></span>
+          <span><a href="tel:+34 699 14 30 78">+34 699 14 30 78</a></span>
+        </div>
+        <a class="boton-cv" href="docs/DanielGarroteCV.pdf" download>📄 Descargar CV</a>
+      </div>
+
+      <div class="bloques-slider">
+        <div class="bloque">
+          <h2>Habilidades</h2>
+          <div class="skill" data-percentage="90%">Microsoft 365<div class="bar bar1"></div></div>
+          <div class="skill" data-percentage="95%">Windows Server<div class="bar bar2"></div></div>
+          <div class="skill" data-percentage="80%">Linux Server<div class="bar bar3"></div></div>
+          <div class="skill" data-percentage="70%">SAP HANA<div class="bar bar4"></div></div>
+        </div>
+
+        <div class="bloque">
+          <h2>Scripting</h2>
+          <div class="skill" data-percentage="90%">HTML5 CSS3 JS<div class="bar bar1"></div></div>
+          <div class="skill" data-percentage="50%">C/C++/C#<div class="bar bar2"></div></div>
+          <div class="skill" data-percentage="90%">Python<div class="bar bar3"></div></div>
+          <div class="skill" data-percentage="95%">PowerShell<div class="bar bar4"></div></div>
+        </div>
+
+        <div class="bloque">
+          <h2>Idiomas</h2>
+          <ul>
+            <li>Español: Nativo</li>
+            <li>Inglés: C1</li>
+            <li>Portugués: B1</li>
+          </ul>
+        </div>
+
+        <div class="bloque">
+          <h2>Intereses</h2>
+          <ul>
+            <li>Redes</li>
+            <li>Automatización</li>
+            <li>Ciberseguridad</li>
+            <li>UI Design</li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ÁREA PRINCIPAL -->
+    <main class="contenido">
     <section class="portfolio">
       <h2>Galería de Proyectos</h2>
       <div class="galeria">
@@ -64,6 +121,7 @@
         </article>
       </div>
     </section>
-  </main>
+    </main>
+  </div>
 </body>
 </html>

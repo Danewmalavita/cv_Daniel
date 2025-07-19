@@ -1,0 +1,231 @@
+/* ===============================
+   SKILL BARS - CSS
+================================= */
+
+/* Estilos base para las habilidades */
+.skill {
+    margin: 1.5rem 0;
+    font-size: 0.95rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInSkill 0.6s ease-out forwards;
+}
+
+/* Animación de aparición de las skills */
+@keyframes fadeInSkill {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Delays escalonados para la aparición */
+.skill:nth-child(1) { animation-delay: 0.1s; }
+.skill:nth-child(2) { animation-delay: 0.2s; }
+.skill:nth-child(3) { animation-delay: 0.3s; }
+.skill:nth-child(4) { animation-delay: 0.4s; }
+
+/* Mostrar el porcentaje a la derecha */
+.skill::after {
+    content: attr(data-percentage);
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 0.85rem;
+    opacity: 0.8;
+    font-weight: 500;
+    color: var(--color-text, #333);
+}
+
+/* Contenedor de la barra */
+.bar {
+    --skill-percentage: 0%;
+    height: 10px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.15);
+    margin-top: 8px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Mejoras para dark theme */
+.dark-theme .bar {
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Pseudo-elemento para el progreso */
+.bar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: var(--skill-percentage);
+    border-radius: 10px;
+    transition: width 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+/* COLORES ESPECÍFICOS - Con !important para asegurar que se apliquen */
+
+/* ===========================================
+   BLOQUE 1: HABILIDADES - Colores específicos
+   =========================================== */
+/* Microsoft 365: Azul #0000FF */
+.bloques-slider .bloque:nth-of-type(1) .skill:nth-of-type(1) .bar::before,
+body .bloques-slider .bloque:first-of-type .bar1::before,
+.bloques-slider .bloque:first-of-type .skill:nth-of-type(1) .bar::before {
+    background: linear-gradient(90deg, #0000FF, #0000FFcc) !important;
+    background-color: #0000FF !important;
+}
+
+/* Windows Server: Rojo #FF0000 */
+.bloques-slider .bloque:nth-of-type(1) .skill:nth-of-type(2) .bar::before,
+body .bloques-slider .bloque:first-of-type .bar2::before,
+.bloques-slider .bloque:first-of-type .skill:nth-of-type(2) .bar::before {
+    background: linear-gradient(90deg, #FF0000, #FF0000cc) !important;
+    background-color: #FF0000 !important;
+}
+
+/* Linux Server: Verde #008000 */
+.bloques-slider .bloque:nth-of-type(1) .skill:nth-of-type(3) .bar::before,
+body .bloques-slider .bloque:first-of-type .bar3::before,
+.bloques-slider .bloque:first-of-type .skill:nth-of-type(3) .bar::before {
+    background: linear-gradient(90deg, #008000, #008000cc) !important;
+    background-color: #008000 !important;
+}
+
+/* SAP HANA: Plateado #C0C0C0 */
+.bloques-slider .bloque:nth-of-type(1) .skill:nth-of-type(4) .bar::before,
+body .bloques-slider .bloque:first-of-type .bar4::before,
+.bloques-slider .bloque:first-of-type .skill:nth-of-type(4) .bar::before {
+    background: linear-gradient(90deg, #C0C0C0, #C0C0C0cc) !important;
+    background-color: #C0C0C0 !important;
+}
+
+/* ===========================================
+   BLOQUE 2: SCRIPTING - Colores específicos
+   =========================================== */
+/* HTML5 CSS3 JS: Cian #00FFFF */
+.bloques-slider .bloque:nth-of-type(2) .skill:nth-of-type(1) .bar::before,
+body .bloques-slider .bloque:nth-of-type(2) .bar1::before,
+.bloques-slider .bloque:nth-of-type(2) .skill:nth-of-type(1) .bar::before {
+    background: linear-gradient(90deg, #00FFFF, #00FFFFcc) !important;
+    background-color: #00FFFF !important;
+}
+
+/* C/C++/C#: Naranja #FFA500 */
+.bloques-slider .bloque:nth-of-type(2) .skill:nth-of-type(2) .bar::before,
+body .bloques-slider .bloque:nth-of-type(2) .bar2::before,
+.bloques-slider .bloque:nth-of-type(2) .skill:nth-of-type(2) .bar::before {
+    background: linear-gradient(90deg, #FFA500, #FFA500cc) !important;
+    background-color: #FFA500 !important;
+}
+
+/* Python: Amarillo #FFFF00 */
+.bloques-slider .bloque:nth-of-type(2) .skill:nth-of-type(3) .bar::before,
+body .bloques-slider .bloque:nth-of-type(2) .bar3::before,
+.bloques-slider .bloque:nth-of-type(2) .skill:nth-of-type(3) .bar::before {
+    background: linear-gradient(90deg, #FFFF00, #FFFF00cc) !important;
+    background-color: #FFFF00 !important;
+}
+
+/* PowerShell: Morado #800080 */
+.bloques-slider .bloque:nth-of-type(2) .skill:nth-of-type(4) .bar::before,
+body .bloques-slider .bloque:nth-of-type(2) .bar4::before,
+.bloques-slider .bloque:nth-of-type(2) .skill:nth-of-type(4) .bar::before {
+    background: linear-gradient(90deg, #800080, #800080cc) !important;
+    background-color: #800080 !important;
+}
+
+/* ===========================================
+   Soluciones adicionales para compatibilidad y bugs
+   =========================================== */
+/* Fallback directo para navegadores antiguos o problemas de compatibilidad */
+.bloques-slider .bloque:first-of-type .skill:nth-of-type(1) .bar::before { background: #0000FF !important; }  /* Microsoft 365: Azul */
+.bloques-slider .bloque:first-of-type .skill:nth-of-type(2) .bar::before { background: #FF0000 !important; }  /* Windows Server: Rojo */
+.bloques-slider .bloque:first-of-type .skill:nth-of-type(3) .bar::before { background: #008000 !important; }  /* Linux Server: Verde */
+.bloques-slider .bloque:first-of-type .skill:nth-of-type(4) .bar::before { background: #C0C0C0 !important; }  /* SAP HANA: Plateado */
+
+.bloques-slider .bloque:nth-of-type(2) .skill:nth-of-type(1) .bar::before { background: #00FFFF !important; }  /* HTML5 CSS3 JS: Cian */
+.bloques-slider .bloque:nth-of-type(2) .skill:nth-of-type(2) .bar::before { background: #FFA500 !important; }  /* C/C++/C#: Naranja */
+.bloques-slider .bloque:nth-of-type(2) .skill:nth-of-type(3) .bar::before { background: #FFFF00 !important; }  /* Python: Amarillo */
+.bloques-slider .bloque:nth-of-type(2) .skill:nth-of-type(4) .bar::before { background: #800080 !important; }  /* PowerShell: Morado */
+
+/* Animación al cargar la página */
+.skill-animate-active .bar::before {
+    animation: shineEffect 3s infinite 1.5s;
+}
+
+/* Efecto de brillo */
+.bar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.3),
+        transparent
+    );
+    animation: shine 3s infinite 2s;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+/* Animaciones */
+@keyframes shine {
+    0% {
+        transform: translateX(-100%);
+    }
+    50%, 100% {
+        transform: translateX(500%);
+    }
+}
+
+@keyframes shineEffect {
+    0%, 100% {
+        filter: brightness(1);
+    }
+    50% {
+        filter: brightness(1.1);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .skill {
+        margin: 1rem 0;
+    }
+    
+    .skill::after {
+        font-size: 0.8rem;
+    }
+    
+    .bar {
+        height: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skill {
+        margin: 0.8rem 0;
+        font-size: 0.9rem;
+    }
+    
+    .skill::after {
+        font-size: 0.75rem;
+    }
+    
+    .bar {
+        height: 7px;
+        margin-top: 6px;
+    }
+}
