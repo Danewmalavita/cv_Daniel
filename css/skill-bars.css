@@ -99,12 +99,12 @@ body .bloques-slider .bloque:first-of-type .bar3::before,
     background-color: #008000 !important;
 }
 
-/* SAP HANA: Plateado #C0C0C0 */
+/* SAP HANA: Plateado #c49ec5 */
 .bloques-slider .bloque:nth-of-type(1) .skill:nth-of-type(4) .bar::before,
 body .bloques-slider .bloque:first-of-type .bar4::before,
 .bloques-slider .bloque:first-of-type .skill:nth-of-type(4) .bar::before {
-    background: linear-gradient(90deg, #C0C0C0, #C0C0C0cc) !important;
-    background-color: #C0C0C0 !important;
+    background: linear-gradient(90deg, #c49ec5, #c49ec5cc) !important;
+    background-color: #c49ec5 !important;
 }
 
 /* ===========================================
@@ -149,7 +149,7 @@ body .bloques-slider .bloque:nth-of-type(2) .bar4::before,
 .bloques-slider .bloque:first-of-type .skill:nth-of-type(1) .bar::before { background: #0000FF !important; }  /* Microsoft 365: Azul */
 .bloques-slider .bloque:first-of-type .skill:nth-of-type(2) .bar::before { background: #FF0000 !important; }  /* Windows Server: Rojo */
 .bloques-slider .bloque:first-of-type .skill:nth-of-type(3) .bar::before { background: #008000 !important; }  /* Linux Server: Verde */
-.bloques-slider .bloque:first-of-type .skill:nth-of-type(4) .bar::before { background: #C0C0C0 !important; }  /* SAP HANA: Plateado */
+.bloques-slider .bloque:first-of-type .skill:nth-of-type(4) .bar::before { background: #c49ec5 !important; }  /* SAP HANA: Plateado */
 
 .bloques-slider .bloque:nth-of-type(2) .skill:nth-of-type(1) .bar::before { background: #00FFFF !important; }  /* HTML5 CSS3 JS: Cian */
 .bloques-slider .bloque:nth-of-type(2) .skill:nth-of-type(2) .bar::before { background: #FFA500 !important; }  /* C/C++/C#: Naranja */
