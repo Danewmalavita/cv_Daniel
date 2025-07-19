@@ -102,7 +102,7 @@ header h1 {
   margin: 0;
   padding: 0.5rem 1rem;
   animation: fadeIn 1s ease-in-out;
-  color: #fff;
+  color: white;
   background-color: rgba(0, 0, 0, 0.7);
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
@@ -203,7 +203,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: white;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 500;
@@ -258,7 +258,7 @@ nav ul li a:hover::after {
 @media (min-width: 768px) {
   header {
     min-height: 250px;
-    padding-top: 60px; /* Espacio para el nav fijo */
+    padding-top: 60px;
   }
 
   .nav-toggle-label {
@@ -297,7 +297,7 @@ nav ul li a:hover::after {
 
   nav ul li a {
     font-size: 1rem;
-    color: #fff;
+    color: white;
     padding: 1rem 1.5rem;
     border-radius: 6px;
   }
@@ -344,10 +344,8 @@ nav ul li a:hover::after {
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
-  position: sticky;
-  top: 0;
-  height: 100vh;
-  overflow-y: auto;
+  position: static;
+  height: auto;
   box-shadow: 0 0 25px var(--color-shadow);
   backdrop-filter: blur(15px);
   border-right: 1px solid var(--color-border);
@@ -672,7 +670,11 @@ section strong {
   height: 40px;
   border-radius: 50%;
   background: transparent;
+<<<<<<< HEAD
+  border: none;
+=======
   border: 2px solid var(--color-text);
+>>>>>>> 26dfd127a5f7fd23e78e1dc039b333ee320b11ff
   color: var(--color-text);
   display: flex;
   align-items: center;
@@ -806,4 +808,8 @@ section strong {
     height: 35px;
     font-size: 16px;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 26dfd127a5f7fd23e78e1dc039b333ee320b11ff

@@ -1,0 +1,43 @@
+/* Horizontal Slider for Bloque Elements */
+.bloques-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-bar-1) rgba(0,0,0,0.1);
+  width: 100%;
+}
+
+.bloques-slider::-webkit-scrollbar {
+  height: 6px;
+}
+
+.bloques-slider::-webkit-scrollbar-track {
+  background: var(--input-bg);
+  border-radius: 10px;
+}
+
+.bloques-slider::-webkit-scrollbar-thumb {
+  background-color: var(--color-bar-1);
+  border-radius: 10px;
+}
+
+.bloques-slider .bloque {
+  flex: 0 0 auto;
+  width: 220px;
+  scroll-snap-align: start;
+  margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+  }
+  
+  .bloques-slider {
+    padding: 0.5rem 0;
+  }
+}
