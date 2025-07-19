@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
             "Microsoft 365": "#0000FF",
             "Windows Server": "#FF0000", 
             "Linux Server": "#008000",
-            "SAP HANA": "c49ec5",
+            "SAP HANA": "#c49ec5",
             
             // Segundo bloque (Scripting)
             "HTML5 CSS3 JS": "#00FFFF",
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     if (!color) {
                         // Primer bloque
                         if (bloqueIndex === 0) {
-                            const colors = ["#0000FF", "#FF0000", "#008000", "c49ec5"];
+                            const colors = ["#0000FF", "#FF0000", "#008000", "#c49ec5"];
                             color = colors[skillIndex] || "#0097c2";
                         } 
                         // Segundo bloque
