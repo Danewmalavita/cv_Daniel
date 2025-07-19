@@ -1,8 +1,8 @@
 /* ===============================
    IMPORTS
 ================================= */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-@import url('theme.css');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("theme.css");
 
 /* ===============================
    VARIABLES
@@ -13,10 +13,10 @@
   --sidebar-width: 300px;
   --section-spacing: 3rem;
   --card-spacing: 1.5rem;
-  --font: 'Poppins', 'Segoe UI', sans-serif;
+  --font: "Poppins", "Segoe UI", sans-serif;
   --radius: 12px;
   --transition-speed: 0.3s;
-  
+
   /* Colors (light theme default, overridden by theme.css) */
   --color-bg: var(--color-background);
   --color-dark: rgba(0, 0, 0, 0.7);
@@ -36,16 +36,15 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: background-color var(--transition-speed), 
-              color var(--transition-speed), 
-              border-color var(--transition-speed), 
-              box-shadow var(--transition-speed);
+  transition: background-color var(--transition-speed),
+    color var(--transition-speed), border-color var(--transition-speed),
+    box-shadow var(--transition-speed);
 }
 
 body {
   font-family: var(--font);
   background: var(--color-bg);
-  background-image: url('../img/body.jpg');
+  background-image: url("../img/body.jpg");
   background-size: 100% 100%;
   background-attachment: fixed;
   color: var(--color-text);
@@ -67,7 +66,11 @@ ul {
   list-style: none;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-weight: 600;
   line-height: 1.3;
   margin-bottom: 1rem;
@@ -85,7 +88,7 @@ header {
   padding: 0;
   position: relative;
   box-shadow: 0 4px 15px var(--color-shadow);
-  background-image: url('../img/header.jpg');
+  background-image: url("../img/header.jpg");
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -147,7 +150,7 @@ header img {
 
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
-  content: '';
+  content: "";
   position: absolute;
 }
 
@@ -220,7 +223,7 @@ nav ul li a:hover {
 }
 
 nav ul li a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 1rem;
@@ -462,12 +465,12 @@ nav ul li a:hover::after {
   font-weight: 500;
   text-decoration: none;
   transition: all 0.3s;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .boton-cv:hover {
   transform: translateY(-3px);
-  box-shadow: 0 7px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
   background: var(--color-bar-1);
   color: white;
 }
@@ -509,7 +512,7 @@ h2 {
 }
 
 h2::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -567,11 +570,11 @@ section strong {
   width: 100%;
   position: relative;
   overflow: hidden;
-  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .bar::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -582,81 +585,124 @@ section strong {
 }
 
 .bar::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 40px;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
   animation: shine 2s infinite;
   border-radius: 10px;
 }
 
 /* Animación de las barras con porcentajes correctos */
-.bar1::before { 
-  background: var(--color-bar-1); 
+.bar1::before {
+  background: var(--color-bar-1);
   animation: grow1 2s ease-in-out 0.5s forwards;
 }
 
-.bar2::before { 
-  background: var(--color-bar-2); 
+.bar2::before {
+  background: var(--color-bar-2);
   animation: grow2 2s ease-in-out 0.7s forwards;
 }
 
-.bar3::before { 
-  background: var(--color-bar-3); 
+.bar3::before {
+  background: var(--color-bar-3);
   animation: grow3 2s ease-in-out 0.9s forwards;
 }
 
-.bar4::before { 
-  background: var(--color-bar-4); 
+.bar4::before {
+  background: var(--color-bar-4);
   animation: grow4 2s ease-in-out 1.1s forwards;
 }
 
 @keyframes grow1 {
-  0% { width: 0%; }
-  100% { width: 90%; }
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
 }
 
 @keyframes grow2 {
-  0% { width: 0%; }
-  100% { width: 80%; }
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
 }
 
 @keyframes grow3 {
-  0% { width: 0%; }
-  100% { width: 70%; }
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
 }
 
 @keyframes grow4 {
-  0% { width: 0%; }
-  100% { width: 80%; }
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
 }
 
 @keyframes shine {
-  0% { transform: translateX(-100%); }
-  100% { transform: translateX(400%); }
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(400%);
+  }
 }
 
 /* ===============================
    ANIMACIONES
 ================================= */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 @keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(89, 220, 255, 0.4); }
-  70% { box-shadow: 0 0 0 10px rgba(89, 220, 255, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(89, 220, 255, 0); }
+  0% {
+    box-shadow: 0 0 0 0 rgba(89, 220, 255, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(89, 220, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(89, 220, 255, 0);
+  }
 }
 
 /* ===============================
@@ -670,11 +716,8 @@ section strong {
   height: 40px;
   border-radius: 50%;
   background: transparent;
-<<<<<<< HEAD
   border: none;
-=======
   border: 2px solid var(--color-text);
->>>>>>> 26dfd127a5f7fd23e78e1dc039b333ee320b11ff
   color: var(--color-text);
   display: flex;
   align-items: center;
@@ -684,12 +727,12 @@ section strong {
   font-size: 18px;
   transition: all 0.3s ease;
   backdrop-filter: blur(5px);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .theme-toggle:hover {
   transform: scale(1.1);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   background: rgba(255, 255, 255, 0.1);
 }
 
@@ -777,20 +820,20 @@ section strong {
   header {
     min-height: 150px;
   }
-  
+
   .profile img.foto-perfil {
     width: 120px;
     height: 120px;
   }
-  
+
   .profile h1 {
     font-size: 1.3rem;
   }
-  
+
   .profile .titulo {
     font-size: 0.9rem;
   }
-  
+
   main.contenido {
     padding: 1rem;
   }
@@ -808,8 +851,4 @@ section strong {
     height: 35px;
     font-size: 16px;
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 26dfd127a5f7fd23e78e1dc039b333ee320b11ff
